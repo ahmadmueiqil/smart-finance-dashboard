@@ -130,6 +130,10 @@ public class TransactionService {
             throw new InsufficientBalanceException("Insafeciant balance");
         }
 
+        if(fromWallet.getId() == request.getToWalletId()){
+            throw new RuntimeException("Invalid Wallet Id");
+        }
+
         walletService.withdraw(request.getAmount(), fromWallet);
         walletService.deposit(request.getAmount(), toWallet);
 
