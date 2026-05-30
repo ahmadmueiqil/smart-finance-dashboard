@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import { X } from "lucide-react"
 import {
-  LayoutDashboard,
-  Receipt,
-  ArrowLeftRight,
-  DollarSign,
-  User,
+    LayoutDashboard,
+    Receipt,
+    ArrowLeftRight,
+    DollarSign,
+    User,
+    Send
 } from "lucide-react"
 
 type Props = {
@@ -38,7 +39,11 @@ const Links = [
         path: "/currency",
         icon: DollarSign,
     },
-
+    {
+        label: "Transfer Money",
+        path: "/transfer",
+        icon: Send,
+    },
     {
         label: "Profile",
         path: "/profile",

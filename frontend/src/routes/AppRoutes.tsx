@@ -11,6 +11,7 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import { PublicRoute } from "./PublicRoute";
 import { ProfilePage }
 from "../pages/ProfilePage"
+import { TransferPage } from "../pages/TransferPage";
 
 
 
@@ -38,6 +39,7 @@ export function AppRoutes(){
                     <Route path="/bills" element={<BillsPage/>}/>
                     <Route path="/currency" element={<CurrencyPage/>}/>
                     <Route path="/transactions" element={<TransactionsPage/>}/>
+                    <Route path="/transfer" element={<TransferPage />} />
                     <Route path="/profile" element={<ProfilePage />} />
 
                 </Route>
