@@ -1,48 +1,88 @@
 # Smart Finance Dashboard
 
-A full-stack personal finance management system that allows users to manage wallets, transactions, bills, and currency conversions through a secure dashboard.
+A modern full-stack finance management platform built with Spring Boot, React, PostgreSQL, and Docker.
 
 ## Features
 
 ### Authentication & Security
 
-* JWT Authentication
-* Secure Login & Registration
-* Protected Routes
-* Spring Security Integration
+- JWT Authentication
+- Secure Login & Registration
+- Protected Routes
+- Spring Security Integration
 
 ### Wallet Management
 
-* View Wallet Balance
-* Deposit Tracking
-* Transfer Money Between Wallets
+- View Wallet Balance
+- Deposit Tracking
+- Transfer Money Between Wallets
+- Balance Validation
+- Prevent Self Transfers
 
 ### Transactions
 
-* View Transaction History
-* Filter Transactions
-* Transfer In / Transfer Out Tracking
-* Expense & Deposit Monitoring
+- View Transaction History
+- Filter Transactions
+- Transfer In / Transfer Out Tracking
+- Expense & Deposit Monitoring
 
 ### Bills Management
 
-* Create Bills
-* View Bills
-* Pay Bills
-* Track Bill Status (Pending / Paid)
+- Create Bills
+- View Bills
+- Pay Bills
+- Track Bill Status (Pending / Paid)
 
 ### Dashboard
 
-* Financial Overview
-* Recent Transactions
-* Recent Bills
-* Financial Analytics Charts
-* Currency Converter Widget
+- Financial Overview
+- Recent Transactions
+- Recent Bills
+- Financial Analytics Charts
+- Currency Converter Widget
 
 ### Currency Exchange
 
-* Real-time Currency Conversion
-* Popular Currency Rates
+- Real-time Currency Conversion
+- Popular Currency Rates
+
+---
+
+# Screenshots
+
+## Dashboard
+
+![Dashboard](docs/DashboardImage.png)
+
+---
+
+## Transactions
+
+![Transactions](docs/TransactionsImage.png)
+
+---
+
+## Bills
+
+![Bills](docs/BillsImage.png)
+
+---
+
+## Currency Converter
+
+![Currency Converter](docs/CurrencyImage.png)
+
+---
+
+## Transfer Money
+
+![Transfer Money](docs/TransferMoneyImage.png)
+
+---
+
+## Profile
+
+![Profile](docs/ProfileImage.png)
 
 ---
 
@@ -50,34 +90,35 @@ A full-stack personal finance management system that allows users to manage wall
 
 ### Backend
 
-* Java 21
-* Spring Boot 3
-* Spring Security
-* Spring Data JPA
-* PostgreSQL
-* JWT Authentication
-* OpenFeign
-* Swagger / OpenAPI
-* JUnit & Mockito
+- Java 21
+- Spring Boot 3
+- Spring Security
+- Spring Data JPA
+- PostgreSQL
+- JWT Authentication
+- OpenFeign
+- Swagger / OpenAPI
+- JUnit
+- Mockito
 
 ### Frontend
 
-* React 19
-* TypeScript
-* Vite
-* React Query
-* Zustand
-* React Hook Form
-* Zod
-* Tailwind CSS
-* Axios
-* Recharts
+- React 19
+- TypeScript
+- Vite
+- React Query
+- Zustand
+- React Hook Form
+- Zod
+- Tailwind CSS
+- Axios
+- Recharts
 
 ### DevOps
 
-* Docker
-* Docker Compose
-* GitHub
+- Docker
+- Docker Compose
+- GitHub
 
 ---
 
@@ -90,6 +131,8 @@ smart-finance-dashboard
 │   └── demo
 │
 ├── frontend
+│
+├── docs
 │
 └── README.md
 ```
@@ -106,13 +149,13 @@ mvn clean package
 docker compose up --build
 ```
 
-Backend runs on:
+Backend:
 
 ```text
 http://localhost:8082
 ```
 
-Swagger:
+Swagger UI:
 
 ```text
 http://localhost:8082/swagger-ui/index.html
@@ -130,7 +173,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs on:
+Frontend:
 
 ```text
 http://localhost:5173
@@ -140,13 +183,13 @@ http://localhost:5173
 
 ## Docker Setup
 
-Backend:
+### Backend
 
 ```bash
 docker compose up --build
 ```
 
-Frontend:
+### Frontend
 
 ```bash
 docker build -t smartfinance-frontend .
@@ -158,7 +201,7 @@ docker run -d -p 5173:80 smartfinance-frontend
 
 ## Testing
 
-Backend tests:
+Backend Tests:
 
 ```bash
 mvn test
@@ -168,18 +211,20 @@ mvn test
 
 ## Future Improvements
 
-* Email Notifications
-* Scheduled Bill Reminders
-* Admin Dashboard
-* Budget Planning
-* Multi-Wallet Support
-* External Banking Integration
+- Email Notifications
+- Scheduled Bill Reminders
+- Budget Planning
+- Multi-Wallet Support
+- External Banking Integration
+- User-to-User Wallet Search
+- Transfer Confirmation Modal
 
 ---
 
 ## Author
 
-Ahmad Mueiqil
+### Ahmad Mueiqil
 
 GitHub:
+
 https://github.com/ahmadmueiqil
